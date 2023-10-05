@@ -2,7 +2,6 @@
 
 /**
  * main - output string using puts
- * @s :String for message
  *
  * Return: 0
  */
