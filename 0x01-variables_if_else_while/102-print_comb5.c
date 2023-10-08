@@ -1,32 +1,45 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible different combinations of two tow-digits numbers
- *
- * Return: Always 0 (Success)
- */
+  * main - Prints all possible combinations of two two-digit numbers.
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
-	int i;
-	int j;
+	int x, y, z, a;
 
-	i = 0;
-	while (i <= 99)
+	for (x = 48; x <= 57; x++)
 	{
-		j = i + 1;
-		while (j <= 99)
+		for (y = 48; y <= 57; y++)
 		{
-			putchar(i / 10 + '0');
-			putchar(i % 10 + '0');
-			putchar(' ');
-			putchar(j / 10 + '0');
-			putchar(j % 10 + '0');
-			putchar(',');
-			putchar(' ');
-			j++;
+			for (z = 48; z <= 57; z++)
+			{
+				for (a = 48; a <= 57; a++)
+				{
+					if (((z + a) > (x + y) &&  z >= x) || x < z)
+					{
+						putchar(x);
+						putchar(y);
+						putchar(' ');
+						putchar(z);
+						putchar(a);
+
+					if (x + y + z + a == 227 && x == 57)
+					{
+					break;
+					}
+					else
+					{
+					putchar(',');
+					putchar(' ');
+					}
+					}
+				}
+			}
 		}
-	i++;
 	}
+
 	putchar('\n');
 
 	return (0);
