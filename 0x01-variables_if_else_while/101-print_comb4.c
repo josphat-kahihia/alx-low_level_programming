@@ -1,39 +1,36 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible different combinations of three digits
- *
- * Return: Always 0 (Success)
- */
+  * main - Prints the smallest combination of three digits
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
-	int i;
-	int j;
-	int k;
+	int x, y, z;
 
-	i = 0;
-	while (i < 100)
+	for (x = '0'; x <= '9'; x++)
 	{
-		j = i + 1;
-		while (j < 100)
+		for (y = '0'; y <= '9'; y++)
 		{
-			k = j + 1;
-			while (k < 10)
+			for (z = '0'; z <= '9'; z++)
 			{
-				putchar(i + '0');
-				putchar(j + '0');
-				putchar(k + '0');
-				if (i != 88 || j != 99)
+				if (x < y && y < z)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(x);
+					putchar(y);
+					putchar(z);
+
+					if (x != '7')
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
-				k++;
 			}
-		j++;
 		}
-	i++;
 	}
+
 	putchar('\n');
 
 	return (0);
