@@ -11,10 +11,10 @@ int _printf (void)
 {
 	char *s ="_putchar";
 
-	while (*s != \0)
+	while (*s != '\0')
 	{
 		_putchar(*s);
-		*s++
+		s++;
 	}
 
 
