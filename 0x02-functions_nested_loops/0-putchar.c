@@ -7,7 +7,7 @@
  *
  */
 
-int _printf (void)
+int main (void)
 {
 	char *s ="_putchar";
 
