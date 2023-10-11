@@ -9,9 +9,14 @@
 
 int _printf (void)
 {
-	char s ="_putchar";
+	char *s ="_putchar";
 
-	_putchar(s);
+	while (*s != \0)
+	{
+		_putchar(*s);
+		*s++
+	}
+
 
 	return (0);
 }
