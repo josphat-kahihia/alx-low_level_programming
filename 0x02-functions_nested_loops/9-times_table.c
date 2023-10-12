@@ -28,7 +28,7 @@ void times_table(void)
 		     		_putchar(',');
 		     		_putchar(' ');
 				if (n<10)
-					_putchar('\n');
+					_putchar(' ');
 				
 				_putchar('\n');
 			}
