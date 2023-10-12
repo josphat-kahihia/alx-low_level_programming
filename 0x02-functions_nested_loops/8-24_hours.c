@@ -17,7 +17,7 @@ void jack_bauer(void)
 	for(H=0; H<3; H++)
 	{
 		if (H > 1)
-			h_max = 5;
+			h_max = 4;
 		else
 			h_max = 10;
 		
