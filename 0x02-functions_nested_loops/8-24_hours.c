@@ -8,18 +8,18 @@
 
 void jack_bauer(void)
 {
-	int H;
-	int h;
-	int M;
-	int m;
-	int h_max;
+	char H;
+	char h;
+	char M;
+	char m;
+	char h_max;
 	
 	for(H=0; H<3; H++)
 	{
 		if (H > 2)
-			h_max = 4;
+			h_max = 5;
 		else
-			h_max = 9;
+			h_max = 10;
 		
 		for(h=0; h < h_max; h++)
 		{
