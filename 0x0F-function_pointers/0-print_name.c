@@ -5,7 +5,7 @@
  * @name: The name parameter to be passed
  * @f: The function pointer
  *
- * Return: void
+ * Return: void /n/A
  */
 void print_name(char *name, void (*f)(char *))
 {
