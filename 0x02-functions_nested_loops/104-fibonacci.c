@@ -8,9 +8,9 @@
  */
 int main(void)
 {
-	long unsigned int i;
-	long unsigned int j;
-	long unsigned int sum;
+	unsigned long i;
+	unsigned long j;
+	unsigned long sum;
 	int f;
 
 	i = 1;
@@ -30,7 +30,6 @@ int main(void)
 	}
 	sum = i + j;
 	printf("%lu", sum);
-	printf("\nFibonacci numbers identified: %d", f);
 
 	return (0);
 }
