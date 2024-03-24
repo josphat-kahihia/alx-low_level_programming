@@ -2,10 +2,12 @@
 
 /**
  * jack_bauer - prints all minutes of a day in hh:mm
+ * @H: The H in Hh:Mm
+ * @h: The h in Hh:Mm
+ * @M: The M in Hh:Mm
+ * @m: The m in Hh:Mm
  *
- * return: void
  */
-
 void jack_bauer(void)
 {
 	char H;
@@ -13,14 +15,14 @@ void jack_bauer(void)
 	char M;
 	char m;
 	char h_max;
-	
+
 	for(H=0; H<3; H++)
 	{
 		if (H > 1)
 			h_max = 4;
 		else
 			h_max = 10;
-		
+
 		for(h=0; h < h_max; h++)
 		{
 			for(M=0; M < 6; M++)
@@ -38,4 +40,3 @@ void jack_bauer(void)
 		}
 	}
 }
-

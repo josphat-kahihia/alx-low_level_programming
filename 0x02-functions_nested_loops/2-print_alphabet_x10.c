@@ -3,13 +3,12 @@
 /**
  * print_alphabet_x10 - print alphabet 10 times
  *
- * return: 0
  */
 void print_alphabet_x10(void)
 {
 	int i;
 
-	for (i=0; i<10; i++)
+	for (i = 0; i < 10; i++)
 	{
 		char c = 97;
 
@@ -22,5 +21,4 @@ void print_alphabet_x10(void)
 		_putchar('\n');
 	}
 
-	return;
 }
